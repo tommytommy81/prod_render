@@ -12,8 +12,8 @@ def get_connection():
 def redirect_user(user_id):
     conn = get_connection()
     cur = conn.cursor()
-    # cur.execute("SELECT voucher_url FROM vouchers WHERE user_id = %s", (user_id,))
-    cur.execute("SELECT link FROM vouchers_by_user WHERE user_id = %s", (user_id,))
+    cur.execute("SELECT voucher_url FROM vouchers WHERE user_id = %s", (user_id,))
+    # cur.execute("SELECT link FROM vouchers_by_user WHERE user_id = %s", (user_id,))
 
     result = cur.fetchone()
     cur.close()
