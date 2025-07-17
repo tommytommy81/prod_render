@@ -22,5 +22,9 @@ def redirect_user(user_id):
     else:
         abort(404)
 
+@app.route('/')
+def index():
+    return "Voucher Redirect Service is running!"
+
 if __name__ == '__main__':
     app.run(debug=True)
