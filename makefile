@@ -1,4 +1,4 @@
-RENDER_DB_URL=postgresql://redirect_db_twlc_user:z02xuAtWwIb9sAkCDBiLLWVYFCMH0LJx@dpg-d1rn917diees7393p6eg-a.oregon-postgres.render.com/redirect_db_twlc
+RENDER_DB_URL =
 
 export RENDER_DB_URL
 
